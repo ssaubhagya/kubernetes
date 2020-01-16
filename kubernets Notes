@@ -1,0 +1,56 @@
+Kubernetes Installation
+#########################
+1)-Install Docker on all three nodes.
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository \
+"deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+$(lsb_release -cs) \
+stable"
+
+sudo apt-get update
+sudo apt-get install -y docker-ce=18.06.1~ce~3-0~ubuntu
+sudo apt-mark hold docker-ce
+systemctl status docker
+
+2)- Install Kubernetes components on all three nodes
+###########
+Install Kubeadm, Kubelet, and Kubectl on all three nodes.
+
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+cat << EOF | sudo tee /etc/apt/sources.list.d/kubernetes.list
+deb https://apt.kubernetes.io/ kubernetes-xenial main
+EOF
+sudo apt-get update
+sudo apt-get install -y kubelet=1.12.7-00 kubeadm=1.12.7-00 kubectl=1.12.7-00
+sudo apt-mark hold kubelet kubeadm kubectl
+
+3)- Bootstrap the cluster on the Kube master node.
+#############
+sudo kubeadm init --pod-network-cidr=10.244.0.0/16  <----This command will give the command to join the node on cluster
+
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+kubectl version
+
+
+4)- Join the worker on cluster
+###############
+
+sudo kubeadm join $some_ip:6443 --token $some_token --discovery-token-ca-cert-hash $some_hash
+
+
+5)- Set up cluster networking with flannel.
+##########
+    1)-Turn on iptables bridge calls on all three nodes:
+            echo "net.bridge.bridge-nf-call-iptables=1" | sudo tee -a /etc/sysctl.conf
+            sudo sysctl -p
+
+    2)-Next, run this only on the Kube master node: It is the configuration details mention on file which we are fetching from hub
+            kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/bc79dd1505b0c8681ece4de4c0d86c5cd2643275/Documentation/kube-flannel.yml
+
+            kubectl get nodes
+
+    After a short time, all three nodes should be in the Ready state. If they are not all Ready the first time you run kubectl get nodes, wait a few moments and try again. It should look something like this:
