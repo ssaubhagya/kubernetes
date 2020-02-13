@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sales-package
+  labels:
+    app: sales-package
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sales-package
+  template:
+    metadata:
+      labels:
+        app: sales-package
+    spec:
+      containers:
+        - name: sales-package
+          image: registry.in.eit.zone/india_devops_poc/sales_package:latest
+          ports:
+            - containerPort: 80
+

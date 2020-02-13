@@ -54,3 +54,15 @@ sudo kubeadm join $some_ip:6443 --token $some_token --discovery-token-ca-cert-ha
             kubectl get nodes
 
     After a short time, all three nodes should be in the Ready state. If they are not all Ready the first time you run kubectl get nodes, wait a few moments and try again. It should look something like this:
+
+
+ #######################
+ Delete resource
+ #####################
+kubectl delete pod
+
+
+
+Login into pod with shell
+#######################
+kubectl exec -it shell-demo -- /bin/bash
