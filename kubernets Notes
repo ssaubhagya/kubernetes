@@ -66,3 +66,17 @@ kubectl delete pod
 Login into pod with shell
 #######################
 kubectl exec -it shell-demo -- /bin/bash
+
+
+When node status is not ready
+#############################
+editing /var/lib/kubelet/config.yaml
+
+   featureGates:
+   : false
+
+Retstart systemctl restart kubelet.service
+
+
+Storage
+############

@@ -11,3 +11,19 @@ spec:
        port: 80
        targetPort: 80
 
+
+
+kind: Service
+apiVersion: v1
+metadata:
+   name: store-products
+spec:
+  type: LoadBalancer
+  selector:
+    app: store-products
+  ports:
+    - protocol: TCP
+      nodePort: 30081
+      port: 80
+      targetPort: 80
+
