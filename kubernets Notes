@@ -80,3 +80,17 @@ Retstart systemctl restart kubelet.service
 
 Storage
 ############
+
+
+Lable to a Node
+#############
+kubectl label node ssaubhagya2c.mylabserver.com node-role.kubernetes.io/worker=worker
+
+Cluster Info
+##############
+kubectl cluster-info
+
+
+Label a worker node
+#####################
+kubectl label node cb2.4xyz.couchbase.com node-role.kubernetes.io/worker=worker

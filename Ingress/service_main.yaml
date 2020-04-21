@@ -1,0 +1,12 @@
+kind: service
+apiVersion: v1
+metadate:
+   name: nginx-svc-main
+spec:
+  selector:
+    labels:
+      run: nginx
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80

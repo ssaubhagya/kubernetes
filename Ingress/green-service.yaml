@@ -1,13 +1,14 @@
+---
 kind: Service
 apiVersion: v1
 metadata:
   labels:
-    app: store-products
-   name: store-products
+    run: nginx-green
+   name: nginx-green-service
 spec:
   ports:
     - protocol: TCP
       port: 80
       targetPort: 80
   selector:
-    app: store-products
+    app: nginx-green

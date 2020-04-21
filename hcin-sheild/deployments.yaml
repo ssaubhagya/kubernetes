@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shieldu
+  labels:
+    app: shieldu
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: shieldu
+  template:
+    metadata:
+      labels:
+        app: shieldu
+    spec:
+      containers:
+        - name: shieldu
+          image: registry.in.eit.zone/k8s-in/shieldu-v1:latest
+          ports:
+            - containerPort: 80
