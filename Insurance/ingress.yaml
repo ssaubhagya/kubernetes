@@ -13,4 +13,4 @@ spec:
       paths:
       - backend:
           serviceName: insurancev2
-          servicePort: 443
+          servicePort: 80

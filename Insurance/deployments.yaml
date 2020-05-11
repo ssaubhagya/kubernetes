@@ -18,4 +18,4 @@ spec:
         - name: insurancev2
           image: registry-pdc.in.eit.zone/k8s-in/k8s-in/insurance:latest
           ports:
-            - containerPort: 443
+            - containerPort: 8080

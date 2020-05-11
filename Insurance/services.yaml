@@ -8,8 +8,8 @@ metadata:
 spec:
   ports:
     -
-      port: 443
+      port: 80
       protocol: TCP
-      targetPort: 443
+      targetPort: 8080
   selector:
     app: insurancev2
