@@ -94,3 +94,35 @@ kubectl cluster-info
 Label a worker node
 #####################
 kubectl label node cb2.4xyz.couchbase.com node-role.kubernetes.io/worker=worker
+
+
+If you changed something in your container image and want to pull that image inside deployments
+#################################################
+kubectl rollout restart deploy <deployment_name>
+
+
+ [ERROR FileContent--proc-sys-net-bridge-bridge-nf-call-iptables]: /proc/sys/net/bridge/bridge-nf-call-iptables does not exist
+ #############################
+ modprobe br_netfilter
+
+
+ Multimaster Kubernetes cluster
+ ################################
+ sudo kubeadm init --config=config.yaml --upload-certs
+
+config.yaml
+##########
+ apiVersion: kubeadm.k8s.io/v1beta1
+kind: ClusterConfiguration
+kubernetesVersion: stable
+# REPLACE with `loadbalancer` IP
+controlPlaneEndpoint: "192.168.122.170:6443"
+networking:
+  podSubnet: 192.168.0.0/18
+################
+
+
+SSL on ingress
+##################
+Create a secret in cluster using the keyfile
+kubectl create secret insurancev2-tls --cert=file.pem --key=file.key

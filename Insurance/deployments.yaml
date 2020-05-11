@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: insurancev2
+  labels:
+    app: insurancev2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: insurancev2
+  template:
+    metadata:
+      labels:
+        app: insurancev2
+    spec:
+      containers:
+        - name: insurancev2
+          image: registry-pdc.in.eit.zone/k8s-in/k8s-in/insurance:latest
+          ports:
+            - containerPort: 443

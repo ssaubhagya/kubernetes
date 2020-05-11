@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: shieldu
+  name: cpu-scheduler
   labels:
-    app: shieldu
+    app: cpu-scheduler
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: shieldu
+      app: cpu-scheduler
   template:
     metadata:
       labels:
-        app: shieldu
+        app: cpu-scheduler
     spec:
       containers:
-        - name: k8s-in/shieldu-v1
-          image: registry.in.eit.zone/k8s-in/shieldu-v1:latest
+        - name: cpu-scheduler
+          image: registry-pdc.in.eit.zone/k8s-in/cpu-scheduler:latest
           ports:
             - containerPort: 8080

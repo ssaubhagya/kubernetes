@@ -1,0 +1,12 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: cpu-scheduler
+spec:
+  rules:
+  - host: cpu-scheduler.in.nonprod
+    http:
+      paths:
+      - backend:
+          serviceName: cpu-scheduler
+          servicePort: 80

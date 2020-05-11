@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: insurancev2
+spec:
+  tls:
+    - secretName: insurancev2-tls
+      hosts:
+        - insurancev2.in.nonprod
+  rules:
+  - host: insurancev2.in.nonprod
+    http:
+      paths:
+      - backend:
+          serviceName: insurancev2
+          servicePort: 443
