@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7a5021d-dfd6-4324-8ff1-2b9d8e861f94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Insurance/deployments.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Insurance/ingress.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Insurance/services.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpu-scheduler/deployments.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpu-scheduler/ingress.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpu-scheduler/services.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Insurancev3/deployments.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Insurancev3/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Insurancev3/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hcin-sheild/deployments.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/hcin-sheild/deployments.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hcin-sheild/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/hcin-sheild/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Insurance/deployments.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Insurancev2/deployments.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Insurance/ingress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Insurancev2/ingress.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Insurance/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Insurancev2/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kubernets Notes" beforeDir="false" afterPath="$PROJECT_DIR$/kubernets Notes" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,23 +21,24 @@
     <session id="-537854403">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="23" />
           <entry key="project.open.time.0" value="13" />
-          <entry key="project.open.time.1" value="5" />
+          <entry key="project.open.time.1" value="7" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="7" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.6" value="5" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="3" />
-          <entry key="project.opened" value="38" />
+          <entry key="project.opened" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="kubernets Notes" value="3" />
           <entry key="setup kubernetes" value="1" />
-          <entry key="yaml" value="38" />
+          <entry key="yaml" value="43" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
@@ -47,20 +46,20 @@
         <counts>
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Scratch" value="1" />
-          <entry key="YAML" value="38" />
+          <entry key="YAML" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="kubernets Notes" value="1312" />
+          <entry key="kubernets Notes" value="1513" />
           <entry key="txt" value="30" />
-          <entry key="yaml" value="781" />
+          <entry key="yaml" value="808" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="1342" />
-          <entry key="YAML" value="781" />
+          <entry key="PLAIN_TEXT" value="1543" />
+          <entry key="YAML" value="808" />
         </counts>
       </usages-collector>
     </session>
@@ -71,34 +70,43 @@
         <entry file="file://$PROJECT_DIR$/kubernets Notes">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="402">
-              <caret line="127" column="68" selection-start-line="127" selection-start-column="68" selection-end-line="127" selection-end-column="68" />
+              <caret line="141" column="16" selection-start-line="141" selection-start-column="16" selection-end-line="141" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Insurance/deployments.yaml">
+        <entry file="file://$PROJECT_DIR$/Insurancev3/deployments.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="27" selection-end-line="20" selection-end-column="32" />
+            <state relative-caret-position="221">
+              <caret line="13" column="13" selection-end-line="20" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Insurance/ingress.yaml">
+        <entry file="file://$PROJECT_DIR$/Insurancev3/services.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+            <state relative-caret-position="238">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Insurance/services.yaml">
+        <entry file="file://$PROJECT_DIR$/Insurancev3/ingress.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="19" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="255">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ingress/nginx-green-ingress.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="25" selection-end-line="11" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -129,9 +137,12 @@
         <option value="$PROJECT_DIR$/cpu-scheduler/services.yaml" />
         <option value="$PROJECT_DIR$/cpu-scheduler/ingress.yaml" />
         <option value="$PROJECT_DIR$/cpu-scheduler/deployments.yaml" />
-        <option value="$PROJECT_DIR$/Insurance/deployments.yaml" />
         <option value="$PROJECT_DIR$/Insurance/services.yaml" />
         <option value="$PROJECT_DIR$/Insurance/ingress.yaml" />
+        <option value="$PROJECT_DIR$/Insurance/deployments.yaml" />
+        <option value="$PROJECT_DIR$/Insurancev3/deployments.yaml" />
+        <option value="$PROJECT_DIR$/Insurancev3/services.yaml" />
+        <option value="$PROJECT_DIR$/Insurancev3/ingress.yaml" />
         <option value="$PROJECT_DIR$/kubernets Notes" />
       </list>
     </option>
@@ -147,6 +158,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,7 +174,12 @@
             <path>
               <item name="kubernetes" type="b2602c69:ProjectViewProjectNode" />
               <item name="kubernetes" type="462c0819:PsiDirectoryNode" />
-              <item name="Insurance" type="462c0819:PsiDirectoryNode" />
+              <item name="Insurancev2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubernetes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubernetes" type="462c0819:PsiDirectoryNode" />
+              <item name="Insurancev3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kubernetes" type="b2602c69:ProjectViewProjectNode" />
@@ -182,7 +199,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,12 +207,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Terraform Config" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sai.saubhagya91409\Desktop\kubernetes\deploy simple service" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sai.saubhagya91409\Desktop\kubernetes" />
       <recent name="C:\Users\sai.saubhagya91409\Desktop\kubernetes\hci-sales-upload" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\sai.saubhagya91409\Desktop\kubernetes\deploy simple service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -243,7 +259,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587466121125</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Creating service in kubernetes">
+      <created>1589196867160</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589196867160</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Creating service in kubernetes">
+      <created>1589196922387</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589196922387</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -370,13 +400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ingress/nginx-green-ingress.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hcin-sheild/ingress.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -447,31 +470,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/deployments.yaml">
+    <entry file="file://$PROJECT_DIR$/Insurancev2/services.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="27" selection-end-line="20" selection-end-column="32" />
+        <state relative-caret-position="170">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/services.yaml">
+    <entry file="file://$PROJECT_DIR$/Insurancev2/ingress.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Insurancev2/deployments.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="19" selection-end-line="14" selection-end-column="20" />
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/ingress.yaml">
+    <entry file="file://$PROJECT_DIR$/Insurancev3/ingress.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        <state relative-caret-position="255">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ingress/nginx-green-ingress.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Insurancev3/deployments.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="13" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Insurancev3/services.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kubernets Notes">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
-          <caret line="127" column="68" selection-start-line="127" selection-start-column="68" selection-end-line="127" selection-end-column="68" />
+          <caret line="141" column="16" selection-start-line="141" selection-start-column="16" selection-end-line="141" selection-end-column="16" />
         </state>
       </provider>
     </entry>

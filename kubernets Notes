@@ -125,4 +125,19 @@ networking:
 SSL on ingress
 ##################
 Create a secret in cluster using the keyfile
-kubectl create secret insurancev2-tls --cert=file.pem --key=file.key
+kubectl create secret tls insurancev2-tls --cert=file.pem --key=file.key
+kubectl create secret tls insurancev3-tls --cert=_.in.nonprod.pem --key=_.in.nonprod.key
+
+
+Date and time Issue in Tomcat logs
+###############################
+Created setenv.sh
+Added CATALINA_OPTS="-Duser.timezone=Asia/Kolkata"
+
+Install k8ss plugin to switch namespace in kubernetes
+###################################
+npm install -g k8ss
+
+k8ss switch --namespace=your_namespace
+kubectl get pods
+

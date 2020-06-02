@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: insurancev2
-          image: registry-pdc.in.eit.zone/k8s-in/k8s-in/insurance:latest
+          image: registry-pdc.in.eit.zone/k8s-in/insurancev2:latest
           ports:
             - containerPort: 8080
